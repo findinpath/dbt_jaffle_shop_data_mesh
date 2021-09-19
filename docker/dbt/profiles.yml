@@ -1,0 +1,15 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: admin
+      password:
+      catalog: insights
+      host: trino
+      port: 8080
+      schema: default
+      threads: 1
+config:
+    send_anonymous_usage_stats: False
